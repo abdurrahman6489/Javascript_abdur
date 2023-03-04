@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            .redborder{
+                border:1px solid red;
+            }
+            .greenborder{
+                border:1px solid green;
+            }
+            .yellowborder{
+                border:1px solid yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li class="list">pen</li>
+            <li class="list">Pencil</li>
+            <li class="list">Eraser</li>
+        </ul>
+        <script>
+            let input = document.getElementsByClassName("list");
+            for(let obj of input){
+                if(obj.innerHTML=="pen"){
+                    obj.classList.add('redborder');
+                }
+                else if(obj.innerHTML=="Pencil"){
+                    obj.classList.add('greenborder');
+                }
+                else
+                    obj.classList.add('yellowborder');
+                
+                obj.innerHTML = "details " + obj.innerHTML;
+
+            }
+        </script>
+    </body>
+</html>
