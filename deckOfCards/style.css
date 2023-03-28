@@ -1,0 +1,30 @@
+/* css code goes here */
+.cards{
+    display:flex;
+    height:80vh;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:2%;
+    border:1px solid blue;
+}
+.card{
+    height:5%;
+    border : 1px solid yellow;
+}
+.cardholders{
+    display:flex;
+    height:16vh;
+    justify-content: space-between;
+    flex-grow:1;
+    flex-basis:0;
+    align-items: flex-start;
+    gap:2%;
+    border:1px solid blue;
+}
+.cardholders *{
+    height:100%;
+    width:20%;
+    border:1px solid green;
+    text-align: center;
+}
