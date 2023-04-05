@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show the deck of Cards</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="cards">
-            <div class="card">2C</div>
 
         </div>
         <div class="cardholders">
             <button id="restart">Restart</button>
-            <div id="101">spade</div>
-            <div  id="102">diamond</div>
-            <div id="103">club</div>
-            <div id="104">hearts</div>
+            <div draggable="false" class="cardContainer spade" id="100">spade</div>
+            <div  draggable="false" class="cardContainer diamond" id="101">diamond</div>
+            <div draggable="false" class="cardContainer club" id="102">club</div>
+            <div draggable="false" class="cardContainer hearts" id="103">hearts</div>
         </div>
     </div>
     <script src="./script.js"></script>

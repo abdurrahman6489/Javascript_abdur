@@ -30,4 +30,4 @@ Link for images : https://github.com/Newton-School/Deck_of_Cards/tree/main/JPEG
 
 Sample Image : https://raw.githubusercontent.com/Newton-School/Deck_of_Cards/fa407f148d47a473a12602d2bd3982be3962681f/JPEG/10C.jpg
 
-Game pdf : https://d3dyfaf3iutrxo.cloudfront.net/general/upload/16a8b18d4b3b4e1f988a671e8addf80f.pdf
+Game pdf : https://d3dyfaf3iutrxo.cloudfront.net/general/upload/16a8b18d4b3b4e1f988a671e8addf80f.pdf 
