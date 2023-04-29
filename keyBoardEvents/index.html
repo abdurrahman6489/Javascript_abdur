@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyBoard Events</title>
+    <style>
+      #type {
+        border: 1px solid green;
+        height: 40vh;
+        width: 90vw;
+        white-space: pre-line;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: red;
+      }
+      #dragElem.dragging {
+        opacity: 0.5;
+      }
+    </style>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div id="dragElem" draggable="true">Type in the below box</div>
+    <div id="type"></div>
+  </body>
+</html>
