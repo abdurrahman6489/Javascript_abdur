@@ -42,10 +42,10 @@ function deleteElements(container) {
 function findSelectedIndexOfSelectTag(selectTagElem) {
   return selectTagElem.options.selectedIndex;
 }
-countries.addEventListener("change", () => {
+countries.addEventListener("input", () => {
   let selectedIndex = findSelectedIndexOfSelectTag(countries);
-  let selectedCountry = countries.options[selectedIndex].value;
   makeSelectTagOptions(array[selectedIndex].States, "State", states);
+  findCountryState();
 });
 function makeSelectTagOptions(array, key, container) {
   deleteElements(container);
@@ -55,4 +55,22 @@ function makeSelectTagOptions(array, key, container) {
     option.innerHTML = elem[key];
     container.appendChild(option);
   });
+}
+function findCountryState() {
+  let selectedIndexCountries = findSelectedIndexOfSelectTag(countries);
+  let selectedIndexStates = findSelectedIndexOfSelectTag(states);
+  let countrySelected = array[selectedIndexCountries].country;
+  let stateSelected =
+    array[selectedIndexCountries].States[selectedIndexStates].State;
+  let capitalSelected =
+    array[selectedIndexCountries].States[selectedIndexStates].Capital;
+  displaydetails(divElem, countrySelected, stateSelected, capitalSelected);
+}
+states.addEventListener("input", findCountryState);
+function displaydetails(container, country, State, Capital) {
+  container.innerHTML = `
+  <h2>Country selected : ${country}</h2>
+  <p>State selected : ${State}</p>
+  <p>Capital is ${Capital}</p>
+  `;
 }
