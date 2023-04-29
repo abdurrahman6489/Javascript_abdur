@@ -1,0 +1,53 @@
+body {
+  background-color: #333;
+}
+div {
+  width: 50vw;
+  height: 25vh;
+  margin-bottom: 3vh;
+  text-align: center;
+}
+.div1 {
+  background-color: yellow;
+  color: black;
+  transform: translate(50%, 10px);
+  position: absolute;
+  animation: move 5s infinite;
+}
+.div2 {
+  background-color: green;
+  color: white;
+  /* transform: rotateX(-45deg); */
+  animation: colorchange 5s infinite;
+}
+.div3 {
+  background-color: orange;
+  color: white;
+  position: absolute;
+  animation: movevertical 5s infinite;
+  /* transform: matrix(0.866, 0.7, -0.8, 0.866, 0, 0); */
+}
+@keyframes move {
+  from {
+    left: 0vw;
+  }
+  to {
+    left: 60vw;
+  }
+}
+@keyframes colorchange {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: orange;
+  }
+}
+@keyframes movevertical {
+  from {
+    top: 50vh;
+  }
+  to {
+    top: 100vh;
+  }
+}
